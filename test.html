@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images with Text</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* Optional: background color for better visibility */
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between the images */
+        }
+
+        .image-box {
+            position: relative;
+            width: 33%;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: auto;
+        }
+
+        .image-box .image-text {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <div class="image-box">
+            <img src="C:\Users\ASUS\Desktop\images\Image01.jpg" alt="Image 1">
+            <div class="image-text">Text for Image 1</div>
+        </div>
+        <div class="image-box">
+            <img style = "width: 33%;height:50%;" src="C:\Users\ASUS\Desktop\images\Image03.jpg" alt="Image 2">
+            <div class="image-text">Text for Image 2</div>
+        </div>
+        <div class="image-box">
+            <img src="C:\Users\ASUS\Desktop\images\Image06.jpg" alt="Image 3">
+            <div class="image-text">Text for Image 3</div>
+        </div>
+    </div>
+
+</body>
+</html>
